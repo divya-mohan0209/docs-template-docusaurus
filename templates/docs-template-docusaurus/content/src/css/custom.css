@@ -1,0 +1,97 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+ @import "icon_dropdown.css";
+/* Import fonts. */
+
+/* poppins */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('../fonts/poppins/poppins-regular.woff') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins/poppins-regular.woff2') format('woff'), /* Modern Browsers */
+}
+
+/* Roboto-Mono */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('../fonts/roboto-mono/roboto-mono-regular.woff') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-mono/roboto-mono-regular.woff2') format('woff'), /* Modern Browsers */
+}
+
+/* Lato */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('../fonts/lato/lato-regular.woff') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lato/lato-regular.woff2') format('woff'), /* Modern Browsers */
+}
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary-lightest: #80bbe2;
+  --ifm-color-primary-lighter: #5eaadb;
+  --ifm-color-primary-light: #53a4d8;
+  --ifm-color-primary: #3d98d3;
+  --ifm-color-primary-dark: #2d8bc8;
+  --ifm-color-primary-darker: #2b83bc;
+  --ifm-color-primary-darkest: #236c9b;
+  --ifm-code-font-size: 95%;
+}
+@media (max-width: 768px) {
+  #theme-main h1 {
+    font-size: 50px !important;
+    line-height: 3rem !important;
+    font-weight: 700
+  }
+  #theme-main .header-docs {
+    margin-bottom: 20px;
+  }
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+}
+
+hr {
+  background-image: -webkit-linear-gradient(left,#f3f3f3,#adadb1,#f3f3f3);
+  margin: 0 auto;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+[data-theme='light'] img[src$='#gh-dark-mode-only'],
+[data-theme='dark'] img[src$='#gh-light-mode-only'] {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 996px) {
+
+  /* Hide useless "Back to main menu" button */
+  .navbar-sidebar__back {
+    display: none;
+  }
+}
