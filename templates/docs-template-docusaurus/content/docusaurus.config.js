@@ -94,7 +94,6 @@ module.exports = {
           routeBasePath: '/', // Serve the docs at the site's root
           /* other docs plugin options */
           sidebarPath: require.resolve('./sidebars.js'),
-          showLastUpdateTime: true,
           editUrl: 'https://github.com/rancher/rke2-docs/edit/main/',
           exclude: ['migration.md'],
         },

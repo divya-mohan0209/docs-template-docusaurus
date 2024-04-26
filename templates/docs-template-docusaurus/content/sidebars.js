@@ -1,21 +1,24 @@
 module.exports = {
   mySidebar: [
     'introduction',
+    'architecture',
     {
       type: 'category',
       label: 'Installation',
       items: [
-        'install/install.md',
-        'install/install.md',
+        'install/install1',
+        'install/install2',
       ],
     },
     {
       type: 'category',
       label: 'Upgrades',
       items:[
-        'upgrade/manual_upgrade',
-        'upgrade/automatic_upgrade',
+        'upgrades/manual_upgrade',
+        'upgrades/automatic_upgrade',
       ],
     },
+   'backup_restore',
+   'known_issues'
   ],
 };
