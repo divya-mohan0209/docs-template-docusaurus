@@ -1,2 +1,3 @@
-# spin-docusaurus
-Spin template for Docusaurus SSG 
+# Spin template for Docusaurus SSG
+
+This is a template for installing Docusaurus SSG with Spin
