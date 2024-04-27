@@ -79,6 +79,3 @@ kubectl port-forward svc/my-first-app 8083:80
 
 ![image](https://github.com/divya-mohan0209/docs-template-docusaurus/assets/21279125/940ae600-0cdb-48d7-ba30-b1569f471a91)
 
-
-
-7. 
