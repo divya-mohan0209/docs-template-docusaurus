@@ -26,38 +26,54 @@ Before getting started, please ensure you have the following installed on your l
 
 1. Install the template within this repo *i.e. docusaurus-ssg*
 
-`spin templates install --upgrade --git https://github.com/divya-mohan0209/docs-template-docusaurus`
+```
+spin templates install --upgrade --git https://github.com/divya-mohan0209/docs-template-docusaurus
+```
 
 2. Create a new spin application based on this template
 
-`spin new my-first-app -t docusaurus-ssg`
+```
+spin new my-first-app -t docusaurus-ssg
+```
 
 **Please note:** You can name it anything you want. `my-first-app` is a sample name.
 
 3. Customize per your requirement
 4. Build the application
 
-`cd my-first-app`
+```
+cd my-first-app
+```
 
-`spin build` 
+```
+spin build
+``` 
 
 5. Test the application locally
 
-`spin up`
+```
+spin up
+```
 
 6. Package and push the application to a local registry in the form of an OCI artefact.
 
-`spin registry push ttl.sh/my-first-app:0.1.0`
+```
+spin registry push ttl.sh/my-first-app:0.1.0
+```
 
 **Please note:** You can push it to any registry. I am using one without authentication here for the demo.
 
 7. Use the image you just pushed to create a deployment & associated services on the Kubernetes cluster.
 
-`spin kube deploy --from ttl.sh/my-first-app:0.1.0`
+```
+spin kube deploy --from ttl.sh/my-first-app:0.1.0
+```
 
 8. Use port forwarding to view the app locally.
 
-`kubectl port-forward svc/my-first-app 8083:80`
+```
+kubectl port-forward svc/my-first-app 8083:80
+```
 
 9. Open the browser and navigate to - http://localhost:8083
 
