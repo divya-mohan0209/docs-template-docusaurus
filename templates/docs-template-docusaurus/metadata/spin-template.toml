@@ -1,5 +1,5 @@
 manifest_version = "1"
-id = "docusaurus-ssg"
+id = "demo-poc"
 description = "Template for Rancher docs using Spin and Docusaurus"
 
 [add_component]
