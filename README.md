@@ -46,6 +46,10 @@ cd my-first-app
 ```
 
 ```
+npm install
+```
+
+```
 spin build
 ``` 
 
